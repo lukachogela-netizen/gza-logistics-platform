@@ -1,0 +1,23 @@
+GZA — ლოჯისტიკური და ტრანსპორტირების პლატფორმა
+==============================================
+
+ეს არის React + TypeScript + Vite ფრონტენდი, Express ბექენდი და SQLite ბაზის მქონე სასწავლო პროექტი.
+
+სრული React აპის გასაშვებად:
+1. დააყენე Node.js 20.11 ან უფრო ახალი ვერსია: https://nodejs.org/
+2. გახსენი ამ საქაღალდის ძირეული ფოლდერი VS Code-ში.
+3. VS Code Terminal-ში გაუშვი: npm install
+4. შემდეგ გაუშვი: npm run dev:full
+5. გახსენი Vite-ის მიერ ნაჩვენები URL — ჩვეულებრივ http://localhost:5173
+6. API health endpoint: http://localhost:4000/api/health
+
+Windows-ზე შეგიძლია START-PROJECT-WINDOWS.bat გაუშვა. თუ ინსტალაცია ვერ მოხერხდა, ფანჯარა შეცდომას აჩვენებს და React პროექტს გაშვებულად არ ჩათვლის.
+
+მხოლოდ npm run dev უშვებს ფრონტენდს; სრული API-ით მუშაობისთვის გამოიყენე npm run dev:full.
+პირველ npm install-ს ინტერნეტი სჭირდება. API-ის გათიშვისას UI იყენებს ლოკალურ cache/demo რეჟიმს.
+
+OPEN-DEMO.html არის ცალკე, ერთ ფაილიანი HTML preview. ის მხოლოდ დიზაინისა და UI-ის დემოა — React/Express აპლიკაციას, API-ს, JWT ავტორიზაციას ან SQLite მონაცემთა ბაზას არ ცვლის.
+
+სასწავლო პორტალზე ან GitHub-ზე ატვირთვამდე გაეშვას: npm test, npm run lint და npm run build; ასევე საჭიროა რეალური ბრაუზერული ტესტები და საკუთარი screenshot-ები.
+
+შენიშვნა: თუ Node.js 24-ზე better-sqlite3-ის Python/node-gyp შეცდომა მიიღე, გამოიყენე ეს განახლებული არქივი; package.json-ში უკეთესი თავსებადობისთვის better-sqlite3 12.10+ არის მითითებული.
